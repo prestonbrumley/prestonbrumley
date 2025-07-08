@@ -13,6 +13,41 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  border-right: 1px solid #2a2a2a;
+  z-index: 1000;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  color: #ccc;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #2ea6ff;
+}
+
+/* Shift main content to the right */
+main {
+  margin-left: 220px;
+}
 /* Layout Container */
 main {
   max-width: 960px;
