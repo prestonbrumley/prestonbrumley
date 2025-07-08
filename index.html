@@ -2,47 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f7f9fc; color: #111; line-height: 1.6; }
+    header, section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    .hero { text-align: center; padding-top: 8rem; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; color: #555; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .project-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; border-radius: 6px; }
+    .contact a { color: #007acc; text-decoration: none; margin-right: 1rem; }
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #aaa; }
+  </style>
 </head>
 <body>
 
-  <header>
+  <header class="hero">
     <h1>Your Name</h1>
-    <p class="tagline">Engineer • Builder • Problem Solver</p>
+    <p>Creative Developer | Designer | Technologist</p>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>About</h2>
-      <p>I design and build modern engineering systems — combining software, hardware, and creativity. My work spans robotics, mechanical design, and real-time data tools.</p>
-    </section>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m a passionate developer who builds elegant and efficient web experiences. I specialize in front-end technologies and love turning ideas into polished user interfaces. This portfolio showcases my recent work, process, and skills.</p>
+  </section>
 
-    <section class="projects">
-      <h2>Featured Projects</h2>
+  <section class="projects">
+    <h2>Featured Projects</h2>
 
-      <div class="project">
-        <h3>⚙️ Robotic Arm Control</h3>
-        <p>Designed and built a 3DOF robotic arm with PID feedback using Arduino + Fusion 360. Achieved 98% positioning accuracy.</p>
-      </div>
+    <div class="project-card">
+      <img src="project1.jpg" alt="Screenshot of Project 1">
+      <h3>Project Title 1</h3>
+      <p>Short description of what the project is, the tech stack, and your role.</p>
+      <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    </div>
 
-      <div class="project">
-        <h3>📊 Satellite Telemetry Dashboard</h3>
-        <p>Live dashboard for satellite positioning using NASA APIs and Python/Plotly. Used by students to visualize orbital mechanics in real time.</p>
-      </div>
-    </section>
+    <div class="project-card">
+      <img src="project2.jpg" alt="Screenshot of Project 2">
+      <h3>Project Title 2</h3>
+      <p>Another cool project summary. Use this section to highlight what makes it unique.</p>
+      <a href="https://yourprojectlive.com" target="_blank">Live Demo</a>
+    </div>
+  </section>
 
-    <section class="contact">
-      <h2>Get in Touch</h2>
-      <p><a href="mailto:you@email.com">you@email.com</a></p>
-      <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-      <p><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Let's connect — feel free to reach out through any of the platforms below.</p>
+    <a href="mailto:you@example.com">Email</a>
+    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+    <a href="https://github.com/yourusername">GitHub</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. Built in dark mode with love.</p>
+    © 2025 Your Name. Built with HTML/CSS and GitHub Pages.
   </footer>
 
 </body>
