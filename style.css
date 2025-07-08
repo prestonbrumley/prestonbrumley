@@ -1,4 +1,4 @@
-/* General reset */
+/* Apple-style dark mode reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,62 +6,80 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  color: #333;
-  background: #fdfdfd;
-  line-height: 1.6;
-  padding: 40px;
-  max-width: 800px;
+  background-color: #000;
+  color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  max-width: 900px;
   margin: auto;
+  padding: 40px 20px;
 }
 
+/* Header */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #1e2a38;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .tagline {
-  color: #666;
-  font-size: 1.1rem;
+  color: #999;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
-main section {
-  margin-bottom: 40px;
-}
-
+/* Headings */
 h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+  font-size: 1.6rem;
+  color: #f5f5f7;
+  border-bottom: 1px solid #333;
   margin-bottom: 20px;
-  color: #444;
+  padding-bottom: 5px;
 }
 
+/* Project Section */
 .project {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .project h3 {
+  color: #fff;
+  font-size: 1.2rem;
   margin-bottom: 5px;
-  color: #005f73;
 }
 
+.project p {
+  color: #ccc;
+}
+
+/* Links */
 a {
-  color: #0077cc;
+  color: #0a84ff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #66aaff;
 }
 
+/* Contact Info */
+.contact a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Footer */
 footer {
+  margin-top: 60px;
   text-align: center;
-  font-size: 0.9rem;
-  color: #888;
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  border-top: 1px solid #222;
+  padding-top: 30px;
+}
