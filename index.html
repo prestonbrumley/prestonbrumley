@@ -14,20 +14,20 @@
   </header>
 
   <main>
-    <section class="about">
+    <section class="about fade-in">
       <h2>About</h2>
       <p>I design and build modern engineering systems — combining software, hardware, and creativity. My work spans robotics, mechanical design, and real-time data tools.</p>
     </section>
 
-    <section class="projects">
+    <section class="projects fade-in">
       <h2>Featured Projects</h2>
 
-      <div class="project">
+      <div class="project fade-in">
         <h3>⚙️ Robotic Arm Control</h3>
         <p>Designed and built a 3DOF robotic arm with PID feedback using Arduino + Fusion 360. Achieved 98% positioning accuracy.</p>
       </div>
 
-      <div class="project">
+      <div class="project fade-in">
         <h3>📊 Satellite Telemetry Dashboard</h3>
         <p>Live dashboard for satellite positioning using NASA APIs and Python/Plotly. Used by students to visualize orbital mechanics in real time.</p>
       </div>
@@ -47,3 +47,16 @@
 
 </body>
 </html>
+
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(fade => observer.observe(fade));
+</script>
